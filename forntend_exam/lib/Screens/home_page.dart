@@ -32,7 +32,11 @@ class HomePage extends StatelessWidget {
                     children: [
                       AppbarButton(categoryName: "Delivery"),
                       AppbarButton(categoryName: "Pickup"),
-                      InkWell(child: Container())
+                      InkWell(
+                          child: Container(
+                        height: 10,
+                        width: 140,
+                      ))
                     ],
                   ),
                   const SizedBox(height: 15),
@@ -44,7 +48,7 @@ class HomePage extends StatelessWidget {
                   const SizedBox(height: 15),
 
                   // Image slider show
-                  const ImageSlideShow(),
+                  const ImageSlideShow(slideImage: "party-box-image.jpg"),
                   const SizedBox(height: 15),
 
                   // Title
@@ -57,19 +61,19 @@ class HomePage extends StatelessWidget {
                       children: [
                         ServicesWidget(
                           service: "Reservations Service",
-                          serviceImage: "gathering.png",
+                          serviceImage: "party-box-image.jpg",
                         ),
                         ServicesWidget(
                           service: "Gift Service",
-                          serviceImage: "gathering.png",
+                          serviceImage: "raseef4-image.jpg",
                         ),
                         ServicesWidget(
                           service: "Catering Service",
-                          serviceImage: "gathering.png",
+                          serviceImage: "forn-wa-saj-image.jpg",
                         ),
                         ServicesWidget(
                           service: "Donation",
-                          serviceImage: "gathering.png",
+                          serviceImage: "party-box-image.jpg",
                         ),
                       ],
                     ),

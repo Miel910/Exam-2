@@ -33,7 +33,7 @@ class _CategoryButtonState extends State<AppbarButton> {
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(13),
               side: BorderSide(
-                color: Styles.primaryColor,
+                color: Colors.white,
               ),
             ),
           ),

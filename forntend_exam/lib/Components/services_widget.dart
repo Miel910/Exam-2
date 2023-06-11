@@ -26,6 +26,7 @@ class ServicesWidget extends StatelessWidget {
           Container(
             height: 70,
             decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(5),
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
@@ -36,7 +37,18 @@ class ServicesWidget extends StatelessWidget {
               ),
             ),
           ),
-          Align(alignment: Alignment.bottomCenter, child: Text(service))
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Align(
+                alignment: Alignment.bottomCenter,
+                child: Text(
+                  service,
+                  style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 10),
+                )),
+          )
         ],
       ),
     );
