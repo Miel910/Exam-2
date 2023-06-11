@@ -13,7 +13,7 @@ class MySearchBar extends StatelessWidget {
       decoration: InputDecoration(
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
-          borderSide: BorderSide(width: 2, color: Styles.textFieldColor),
+          borderSide: BorderSide(width: 1, color: Styles.textFieldColor),
         ),
         contentPadding: const EdgeInsets.symmetric(vertical: 4.0),
         prefixIcon: const Icon(Icons.search),
